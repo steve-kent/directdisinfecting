@@ -10137,7 +10137,6 @@ img::-moz-selection {
 }
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 6rem;
   text-align: center;
   color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/hero1.jpg");
@@ -10164,7 +10163,6 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -10502,4 +10500,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* CUSTOM */
+
+.logo-font {
+  font-family: 'Syncopate', sans-serif !important;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.locally-owned {
+  
+  padding-top: 12.5rem;
+  padding-right: 1rem;
 }
