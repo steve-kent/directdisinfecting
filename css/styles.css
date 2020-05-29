@@ -10512,10 +10512,18 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: 'Open Sans', sans-serif !important;
 }
 
-.locally-owned {
-  
+.hero-info {
   padding-top: 12.5rem;
   padding-right: 1rem;
+}
+
+.hero-card {
+  background-color: rgb(103, 188, 255, 0.2);
+  padding: 1em;
+}
+
+.hero-card > p {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
