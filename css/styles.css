@@ -164,7 +164,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #e6b301;
+  color: rgb(20, 143, 241);
   text-decoration: underline;
 }
 
@@ -10515,6 +10515,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .hero-info {
   padding-top: 12.5rem;
   padding-right: 1rem;
+  padding-bottom: 65px;
 }
 
 .hero-card {
@@ -10524,6 +10525,26 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .hero-card > p {
   margin-bottom: 0;
+}
+
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+.arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgb(65, 65, 65, 0.5);
+  border-radius: 50%;
 }
 
 @media (max-width: 1200px) {
