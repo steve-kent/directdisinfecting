@@ -32,7 +32,7 @@ exports.submit = functions.https.onRequest((req, res) => {
         subject: 'Contact/Quote Request',
         text: `
         Name: ${name}
-        Email: ${name}
+        Email: ${email}
         Phone: ${phone}
         Message: ${message}
 
@@ -41,7 +41,7 @@ exports.submit = functions.https.onRequest((req, res) => {
         `,
         html: `
         <p>Name: ${name}</p>
-        <p>Email: ${name}</p>
+        <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
         <p>Message: ${message}</p>
 <br>
