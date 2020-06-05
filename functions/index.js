@@ -22,14 +22,32 @@ exports.submit = functions.https.onRequest((req, res) => {
       if (req.method !== 'POST') {
         return;
       }
+
+      const { name, email, phone, message, footage, facility } = req.body;
   
       const mailOptions = {
         from: '"Contact Request" <directdisinfectingmobile@gmail.com>',
-        replyTo: req.body.email,
+        replyTo: email,
         to: 'stevekentsphone@gmail.com',
         subject: 'Contact/Quote Request',
-        text: `Email: ${req.body.email}`,
-        html: `<p>Email: ${req.body.email}</p>`
+        text: `
+        Name: ${name}
+        Email: ${name}
+        Phone: ${phone}
+        Message: ${message}
+
+        Square Footage: ${footage}
+        Facility Type: ${facility}
+        `,
+        html: `
+        <p>Name: ${name}</p>
+        <p>Email: ${name}</p>
+        <p>Phone: ${phone}</p>
+        <p>Message: ${message}</p>
+<br>
+        <p>Square Footage: ${footage}</p>
+        <p>Facility Type: ${facility}</p>
+        `
       };
   
       mailTransport.sendMail(mailOptions);
