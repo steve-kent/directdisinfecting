@@ -22,6 +22,8 @@ exports.submit = functions.https.onRequest((req, res) => {
       if (req.method !== 'POST') {
         return;
       }
+
+      console.log(JSON.stringify(req));
   
       const mailOptions = {
         from: '"Contact Request" <directdisinfectingmobile@gmail.com>',
