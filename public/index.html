@@ -125,7 +125,7 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
             </div>
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form id="contactForm" name="sentMessage">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -183,7 +183,7 @@
             </div>
                 <div class="text-center">
                     <div id="success"></div>
-                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" onclick="submitForm()">Send Message</button>
                 </div>
             </form>
         </div>
@@ -211,6 +211,10 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script src="js/submitForm.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
 </html>
