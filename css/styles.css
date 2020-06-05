@@ -10547,6 +10547,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-radius: 50%;
 }
 
+.facility-select {
+  height: 66px;
+}
+
+
+
 @media (max-width: 1200px) {
   header.masthead .masthead-heading {
     font-size: 3.5rem;
