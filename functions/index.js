@@ -3,7 +3,7 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
-const cors = require('cors')({ origin: false });
+const cors = require('cors')({ origin: true });
 // Configure the email transport using the default SMTP transport and a GMail account.
 // For other types of transports such as Sendgrid see https://nodemailer.com/transports/
 // TODO: Configure the `gmail.email` and `gmail.password` Google Cloud environment variables.
@@ -22,8 +22,6 @@ exports.submit = functions.https.onRequest((req, res) => {
       if (req.method !== 'POST') {
         return;
       }
-
-      console.log(JSON.stringify(req));
   
       const mailOptions = {
         from: '"Contact Request" <directdisinfectingmobile@gmail.com>',
