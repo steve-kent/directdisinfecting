@@ -27,7 +27,7 @@ exports.submit = functions.https.onRequest((req, res) => {
   
       const mailOptions = {
         from: '"Contact Request" <directdisinfectingmobile@gmail.com>',
-        replyTo: email,
+        replyTo: 'directdisinfectingmobile@gmail.com',
         to: 'service@directdisinfecting.com,smurphy@directdisinfecting.com,skent@directdisinfecting.com',
         subject: 'Contact/Quote Request',
         text: `
