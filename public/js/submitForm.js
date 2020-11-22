@@ -9,6 +9,11 @@ function submitForm()
     const footage = document.getElementById('footage').value;
     const facility = document.getElementById('facility').value;
 
+    if (!email || !phone)
+    {
+        return;
+    }
+
     axios.post('https://us-central1-direct-disinfecting.cloudfunctions.net/submit', 
     {
         name: name,
