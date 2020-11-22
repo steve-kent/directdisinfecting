@@ -20,10 +20,8 @@ function submitForm()
     })
     .then(function(response) 
     {
-        console.log('response: ' + JSON.stringify(response));
     })
     .catch(function(error) 
     {
-        console.error(error);
     } )
 }
