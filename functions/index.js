@@ -50,9 +50,18 @@ exports.submit = functions.https.onRequest((req, res) => {
         `
       };
   
-      mailTransport.sendMail(mailOptions);
-  
-      res.status(200).end();
+      mailTransport.sendMail(mailOptions, (error, info) => {
+        if (error){
+           console.log(error);
+           res.json({error: 'There was an error while sending the message.'});
+           res.sendStatus(500);
+        }
+        else{
+           console.log('Message sent: ' + info.response);
+           res.sendStatus(200);
+        }
+        return res.end();
+      });
       // or you can pass data to indicate success.
       // res.status(200).send({isEmailSend: true});
     });
